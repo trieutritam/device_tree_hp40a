@@ -1,0 +1,9 @@
+ota-property-files=metadata:69:316         
+ota-required-cache=0
+ota-type=BLOCK
+post-build=ViettelTV/HP4013-Viettel/HP40A:10/QTT8.201201.004/C3.19.11_20230309:user/release-keys
+post-build-incremental=C3.19.11_20230309
+post-sdk-level=29
+post-security-patch-level=2023-02-05
+post-timestamp=1678340504
+pre-device=HP40A

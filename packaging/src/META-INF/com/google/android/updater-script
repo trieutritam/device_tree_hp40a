@@ -1,0 +1,11 @@
+getprop("ro.product.device") == "HP40A" || abort("E3004: This package is for \"HP40A\" devices; this is a \"" + getprop("ro.product.device") + "\".");
+
+ui_print("Target: ViettelTV/HP4013-Viettel/HP40A");
+delete_file("/cache/recovery/dynamic_partition_metadata.UPDATED");
+show_progress(0.650000, 0);
+
+show_progress(0.300000, 3);
+package_extract_file("recovery.img", "/dev/block/recoverybak");
+set_bak_flag("bak");
+set_bootloader_env("reset_env","1");
+set_progress(1.000000);
